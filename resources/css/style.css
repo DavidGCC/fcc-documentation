@@ -1,0 +1,56 @@
+html { margin: 0; padding: 0; font-size: 16px; }
+
+* { box-sizing: border-box; margin: 0; font-family: 'Montserrat', sans-serif; padding: 0; }
+
+body { height: 100%; margin: 0; padding: 0; width: 100%; line-height: 1.6; }
+
+img { width: 75%; margin: 1rem 5rem 2rem 5rem; }
+
+#main-doc { height: 100%; overflow-y: auto; overflow-x: hidden; margin: 0 4rem 5rem 27vw; }
+
+#main-doc .main-section header { font-size: 2rem; font-weight: 500; border: none; margin: 3rem 0 1rem 0; }
+
+#main-doc .main-section p { font-size: 1.2rem; font-weight: 300; }
+
+#main-doc .main-section h3 { font-weight: 400; font-size: 1.3rem; color: #0145ff; margin-bottom: .3rem; }
+
+#main-doc .main-section code { font-size: initial; color: initial; font-weight: initial; }
+
+#main-doc .main-section pre { background-color: #f1f1f1; border-radius: .5rem; margin-bottom: 1rem; padding: .5rem; }
+
+#main-doc .main-section a { text-decoration: none; color: #386ac9; transition: all 0.3s ease; display: inline-block; font-weight: 400; }
+
+#main-doc .main-section a:hover { color: #2f17b9; text-decoration: underline; }
+
+#main-doc .main-section pre.error { background-color: #f8797946; }
+
+#main-doc .main-section .code { background-color: #F1F1F1; }
+
+#main-doc .main-section span.comment { color: #0aac0a; }
+
+#main-doc .main-section h2 { font-weight: 300; font-size: 1.5rem; }
+
+#main-doc .main-section #dataTypeTable { font-size: 1.2rem; text-align: left; border-spacing: .9rem; }
+
+#main-doc .main-section #dataTypeTable tr th { font-weight: 600; }
+
+#main-doc .main-section #dataTypeTable tr span { background-color: #F1F1F1; margin-left: .2rem; padding: .2rem; color: #c44444; }
+
+#main-doc .main-section code { background: #f1f1f1; padding: .2rem; color: #5c2fd6; }
+
+#navbar { width: 25%; overflow-y: auto; overflow-x: hidden; border-right: 1px solid black; height: 100%; position: fixed; top: 0px; left: 0px; }
+
+#navbar header { font-size: 1.8rem; text-align: left; font-weight: bold; padding: 1rem 0rem 2rem .5rem; margin: 1rem 0 0 0; border-bottom: 3px double black; }
+
+#navbar .navlist { overflow-y: auto; overflow-x: hidden; }
+
+#navbar .navlist .navItem { list-style-type: none; padding: 1rem; margin: 0.5rem; border-bottom: 1px solid #6d6b6b; color: #5e5e5e; }
+
+#navbar .navlist .navItem .nav-link { text-decoration: none; color: #5e5e5e; font-size: 1.2rem; }
+
+#navbar .navlist .navItem .nav-link:hover { color: #000000; text-decoration: underline; }
+
+@media only screen and (max-width: 1080px) { #navbar { height: 40vh; width: 100%; margin-left: 0; background-color: #f1f1f1; position: relative; }
+  #navbar header { display: none; }
+  #main-doc { margin-left: 0; width: 100%; }
+  img { width: 80%; margin: 10vw; } }

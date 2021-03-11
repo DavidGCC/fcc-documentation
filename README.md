@@ -1,0 +1,2 @@
+# Python Documentation
+Python Documentation created for [FreeCodeCamp's Technical Documentation Project](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page)

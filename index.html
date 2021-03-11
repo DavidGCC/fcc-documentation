@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="resources/css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;700&display=swap" rel="stylesheet">
+        <title>Technical Documentation</title>
+    </head>
+    <body>
+    <nav id="navbar">
+        <header id="mainHeader">Python Documentation</header>
+            <ul class="navlist">
+                <li class="navItem"><a href="#Introduction" class="nav-link">Introduction</a></li>
+                <li class="navItem"><a href="#What_Makes_Python_Great!" class="nav-link">What Makes Python Great!</a></li>
+                <li class="navItem"><a href="#Installation" class="nav-link">Installation</a></li>
+                <li class="navItem"><a href="#Hello_World" class="nav-link">Hello World</a></li>
+                <li class="navItem"><a href="#Indentation" class="nav-link">Indentation</a></li>
+                <li class="navItem"><a href="#Comments" class="nav-link">Comments</a></li>
+                <li class="navItem"><a href="#Variables" class="nav-link">Variables</a></li>
+                <li class="navItem"><a href="#Data_Types" class="nav-link">Data Types</a></li>
+                <li class="navItem"><a href="#if...elif...else_Statements" class="nav-link">if...elif...else Statements</a></li>
+                <li class="navItem"><a href="#Logical_Operators" class="nav-link">Logical Operators</a></li>
+                <li class="navItem"><a href="#Loops" class="nav-link">Loops</a></li>
+                <li class="navItem"><a href="#Function_Declarations" class="nav-link">Function Declarations</a></li>
+                <li class="navItem"><a href="#Variable_Scope" class="nav-link">Variable Scope</a></li>
+                <li class="navItem"><a href="#Reference" class="nav-link">Reference</a></li>
+    
+            </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header class="section-header">Introduction</header>
+            <p class="section-content">Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.The Python interpreter is easily extended with new functions and data types implemented in C or C++ (or other languages callable from C). Python is also suitable as an extension language for customizable applications.This tutorial does not attempt to be comprehensive and cover every single feature, or even every commonly used feature. Instead, it introduces many of Python’s most noteworthy features, and will give you a good idea of the language’s flavor and style.</p>
+        </section>
+        <section class="main-section" id="What_Makes_Python_Great!">
+            <header class="section-header">What Makes Python Great!</header>
+            <p class="section-content">Python is easy to use, powerful, and versatile, making it a great choice for beginners and experts alike. Python’s readability makes it a great first programming language — it allows you to think like a programmer and not waste time with confusing syntax. For instance, look at the following code to print “hello world” in C# and Python.</p>
+            <h3>C#</h3>
+                <pre class="code">
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace HelloWorld {
+    class Program {
+        static void Main(string[] args) {
+            Console.WriteLine("Hello World!");
+        }
+    }
+}</pre> 
+            <h3>Python</h3>
+                <pre>print("Hello World")</pre>
+            <p>Ease of installation is one of the python's perks. If you're on a Mac or a Linux, Python comes pre-installed, so just open up the terminal and just type <code>python</code> and press enter.</p>
+            <img src="resources/image/pythonOnMac.jpg">
+            <p>Even on windows it is easy to <a href="#Installation">install</a>. Instead of focusing on how to even run your code, you'll be able to focus on learning actual prgramming.</p>
+            <p>Every big company uses Python. The famous <a href="dropbox.com">Dropbox</a> is written entirely in Python. Most companies use a mixture of different languages. For example, a few of the languages Google uses are C++, Python and now Go among them. Early at Google, there was an <a href="https://stackoverflow.com/questions/2560310/heavy-usage-of-python-at-google/2561008#2561008">engineering decision</a> to use <i>"Python where we can, C++ where we must."</i></p>
+        </section>
+        <section class="main-section" id="Installation">
+            <header class="section-header">Installation</header>
+            <p class="section-content">Python comes pre-installed on Mac and most Linux distributions. However, if you use Windows you will have to manually install it, but don't fear. It is nothing complicated.</p>
+            <p>First, go to <a href="python">Python's official web page</a>. Next, got to downloads section and you'll see a download button for the latest python version. Download and open the executable. Follow instructions and after it's done everything will be ready for you.</p>
+            <p>To make sure Python installed correctly open the terminal or cmd for windows and type <code>py --version</code>. You should see the installed python version. And now you're ready to write your own programs.</p>
+        </section>
+        <section class="main-section" id="Hello_World">
+            <header class="section-header">Hello World</header>
+            <p class="section-content">Lets write a simple program. A programmers first code, a program that prints "Hello World!".</p>
+            <p>To start writing code, firstly, open up your favourite text editor(even a simple notepad.exe will do). To output messages to screen we use the print() function. After, you open an editor just write print("Hello World!"). Save the document with .py extension.</p>
+            <p>Next open the terminal, navigate to the folder where you saved the file. and just write <code>python fileName.py</code> and see your program in action.</p>
+            <img src="resources/image/HelloWorld.JPG">
+            <p>Here is the executed program.</p>
+            <img src="resources/image/programInRun.JPG">
+        </section>
+        <section class="main-section" id="Indentation">
+            <header class="section-header">Indentation</header>
+            <p class="section-content">Indentation refers to spacing before lines of code. While most languages use curly braces ({ and }) for defining blocks of code, Python uses spaces. For Example, take a look at simple if...else statement in C# and Python.</p>
+            <h3>C#</h3>
+                <pre class="code">
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace HelloWorld {
+    class Program {
+        static void Main(string[] args) {
+            if (statement == true) {
+                Console.WriteLine("message if true");
+            } else {
+                Console.WriteLine("message if false");
+            }
+        }
+    }
+}</pre>
+<h3>Python</h3>
+<pre>if (statement == true):
+    print("message if true")
+else:
+    print("message if false")
+</pre>
+        <p>Here you can see that C# uses curly braces to define block of code. Meanwhile, in Python we use spaces.</p>
+        <p>While in other programming languages indentation in code is for readability only, the indentation in python is neccessary and you should pay always pay attention, number of spaces is up to a programmer but it should be at least one(lines don't have to have same number of spaces). Same block of code must have same number of spaces.</p>
+        <h3>Python</h3>
+        <p>This code  wont work, because the second line has 4 spaces and the third one has 3.</p>
+        <pre class="error">
+if (5 > 3):
+    print("Five is greater than three")
+       print("Five is greater than three")</pre>
+        <p>This code has the correct indentation.</p>
+        <pre class="code">
+if (5 > 3):
+    print("Five is greater than three")
+        print("Five is greater than three")</pre>
+        <p>If you fail to correctly write indentations, the program will generate <code>IndentationError</code>.</p>
+        </section>
+        <section class="main-section" id="Comments">
+            <header class="section-header">Comments</header>
+            <p class="section-content">Comments can be used to make your code more readable, to explain your code and sometimes prevent execution of certain lines when testing the code.<br>In Python comments start with <code>#</code>. Comments will not be executed and thats why it can be a great help when testing the code. <br>Since the print("hello world") is commented, only print("hello friend") will be exectued.</p>
+            <pre class="code"><span class="comment">#print("hello world")</span>
+print("hello friend")</pre>
+
+        </section>
+        <section class="main-section" id="Variables">
+            <header class="section-header">Variables</header>
+            <p class="section-content">Variables are containers used to store data. <br>Unlike other programming lanugages Python has no keyword for delcaring variables (JavaScript has <code>var</code> or <code>let</code> keyword). You don't have to specify a data type when declaring variables in Python.</p>
+            <pre class="code">x = 5;
+y = 10;
+str = "fifteen"
+print(x + y,"is " + str);</pre>
+            <p>Prints out <code>10 + 5 is fifteen</code> to the console.<br><br> There are certain rules when naming a variable.</p><br>
+                <li>A variable name must start with a letter or underscore character</li>
+                <li>A variable name can not start with a number</li>
+                <li>A variable names can only contain alpha-numeric characters and underscores (A-z, 0-9, _)</li>
+                <li>Variable names are case-sensitive (age, Age and AGE are three different variables)</li>
+            <p>You can also assign values to multiple variables at once.</p>
+            <pre class="code">x, y, z = 1, 2, 3;
+print(x + y + z)</pre>
+            <p>outputs <code>6</code></p>
+            <p>It's also possible to assign same value to multiple variables at once.</p>
+            <pre class="code">x = y = z = "These variable have the same value"</pre>
+        </section>
+        <section class="main-section" id="Data_Types">
+            <header class="section-header">Data Types</header>
+            <p class="section-content">Variables can store data of different types, and different types can do different things.<br>Python has the following built-in data types.</p>
+            <table id="dataTypeTable">
+                <tr>
+                    <th>Text Types:</th>
+                    <td><span>str</span></td>
+                </tr>
+                <tr>
+                    <th>Numeric Types:</th>
+                    <td>
+                        <span>int </span>
+                        <span>float </span>
+                        <span>complex</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Sequence Types:</th>
+                    <td>
+                        <span>list </span>
+                        <span>tuple </span>
+                        <span>range</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Mapping Types:</th>
+                    <td><span>dict</span></td>
+                </tr>
+                <tr>
+                    <th>Set Types:</th>
+                    <td><span>set </span><span>frozenset</span></td>
+                </tr>
+                <tr>
+                    <th>Boolean Types:</th>
+                    <td><span>bool</span></td>
+                </tr>
+                <tr>
+                    <th>Binary Types:</th>
+                    <td>
+                        <span>bytes </span>
+                        <span>bytearray </span>
+                        <span>memoryview</span>
+                    </td>
+                </tr>
+            </table>
+            <p>You can get the type with <code>type()</code> function.</p>
+            <br>
+            <table id="dtref" >
+                <tbody><tr>
+                <th style="min-width:350px">Example</th>
+                <th>Data Type</th> 
+                </tr>
+                <tr>
+                <td>x = "Hello World"</td>
+                <td>str</td>
+                </tr>
+                <tr>
+                <td>x = 20</td>
+                <td>int</td>
+                </tr>
+                <tr>
+                <td>x = 20.5</td>
+                <td>float</td>
+                </tr>
+                <tr>
+                <td>x = 1j</td>
+                <td>complex</td>
+                </tr>
+                <tr>
+                <td>x = ["apple", "banana", "cherry"]</td>
+                <td>list</td>
+                </tr>
+                  <tr>
+                <td>x = ("apple", "banana", "cherry")</td>
+                <td>tuple</td>
+                  </tr>
+                  <tr>
+                <td>x = range(6)</td>
+                <td>range</td>
+                  </tr>
+                  <tr>
+                <td>x = {"name" : "John", "age" : 36}</td>
+                <td>dict</td>
+                  </tr>
+                  <tr>
+                <td>x = {"apple", "banana", "cherry"}</td>
+                <td>set</td>
+                  </tr>
+                  <tr>
+                <td>x = frozenset({"apple", "banana", "cherry"})</td>
+                <td>frozenset</td>
+                  </tr>
+                  <tr>
+                <td>x = True</td>
+                <td>bool</td>
+                  </tr>
+                  <tr>
+                <td>x = b"Hello"</td>
+                <td>bytes</td>
+                  </tr>
+                  <tr>
+                <td>x = bytearray(5)</td>
+                <td>bytearray</td>
+                </tr>
+                <tr>
+                <td>x = memoryview(bytes(5))</td>
+                <td>memoryview</td>
+                </tr>
+                </tbody></table>
+        </section>
+        <section class="main-section" id="if...elif...else_Statements">
+            <header class="section-header">if...elif...else Statements</header>
+            <p class="section-content">Python supports the usual logical conditions from mathematics:
+                <li>Equals: a == b</li>
+                <li>Not Equals: a != b</li>
+                <li>Less Than: a < b</li>
+                <li>Less Than or Equal to: a <= b</li>
+                <li>Greater Than: a > b</li>
+                <li>Greater Than or Equal to: a >= b</li>
+                These conditions can be used in several ways, most commonly in "if statements" and loops.<br>
+                An "if statement" is written by using the if keyword.</p>
+            <pre class="code">x = 5
+y = 6
+if (x < y):
+    print("x is lower than y")</pre>
+            <p>Prints out <code>x is lower than y</code></p>
+            <p>The code inside the if statement only executes if the condition inside parentheses is true.</p>
+            <br>
+            <p>an elif statement is Python's way of saying <i>"If previous conditions weren't true, then try this condition.</i></p>
+            <pre class="code">x = 5
+y = 6
+if (x > y):
+    print("x is bigger than y")
+elif (x < y):
+    print("y is bigger than x")</pre>
+            <p>Prints out <code>y is bigger than x</code> since the first condition isn't true.</p>
+            <br>
+            <p>Finally, the code inside else statement executes if all conditions inside if and/or elif statements evaluate to false.</p>
+            <pre class="code">x = 5
+y = 8
+if (x > y):
+    print("x is bigger than y")
+else:
+    print("x is lower than y")</pre>
+            <p>Prints out <code>x is lower than y</code></p>
+            <br>
+            <p>There is also shorthand if...else statement also called <h3>Ternary Operators</h3></p>
+            <pre class="code">print("5 is greater than 3") if 5 > 3 else print("5 is not greater than 3")</pre>
+        </section>
+        <section class="main-section" id="Logical_Operators">
+            <header class="section-header">Logical Operators</header>
+            <p class="section-content">Just like every other programming languages, Python has a set of logical operators.</p>
+            <li><code>and</code> the and operator evaluates to true if both statements are true. For Example: <code>5 > 3 and 3 > 1</code> evaluates to <code>true</code>.</li>
+            <li><code>or</code> the or operator evaluates to true if at least one statement is true. For Example: <code>5 > 3 or 3 < 1</code> evaluates to <code>true</code>.</li>
+            <li><code>not</code> operator inverts the statement. For Example: <code>not true</code> evaluates to <code>false</code> and <code>not false</code> evaluates to <code>true</code>.</li>
+        </section>
+        <section class="main-section" id="Loops">
+            <header class="section-header">Loops</header>
+            <p class="section-content">Loops repeat block of code if the given statement is true.<br>Python has two primitive loop commands:</p>
+            <li><code>while</code> Loops</li>
+            <li><code>for</code> Loops</li>
+            <p>A <code>while</code> loops executes a block of code if the statement is true.</p>
+            <pre class="code">i = 0
+while (i < 5):
+    print(i)
+    i++</pre>
+            <p>This code will print numbers from 0 to 4. REMEMBER to increment i or the loop will run forever and crash the program.</p>
+            <p><code>while</code> requires relevant variables to be rady, in this case we've defined <code>i</code>, an indexing variable, which was set to <code>0</code>.</p>
+            <br>
+            <p>A <code>for</code> loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string.)<br>This is less like the <code>for</code> keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.<br>With the <code>for</code> loop we can execute a set of statements, once for each item in a list, tuple, set etc.</p>
+            <pre class="code">fruits = ["apple", "peach", "banana"]
+for i in fruits:
+    print(i)</pre>
+            <p>Prints out items of fruits list.</p><br><br>
+            <p>The <code>break</code> statement is used in loops to stop the loop prematurely.</p>
+            <pre class="code">fruits = ["apple", "peach", "banana"]
+for i in fruits:
+    if (i == "peach")
+        break
+    print(i)</pre>
+            <p>The loop above will only print <code>apple</code> and it will break after it.</p><br><br>
+            <p>The <code>continue</code> statement skips a single iteration.</p>
+            <pre class="code">fruits = ["apple", "peach", "banana"]
+for i in fruits:
+    if (i == "peach"):
+        continue
+    print(i)</pre>
+            <p>This loop will skip over <code>peach</code>.</p>
+        </section>
+        <section class="main-section" id="Function_Declarations">
+            <header class="section-header">Function Declarations</header>
+            <p class="section-content">A function is a block of code which only runs when it is called.<br><br>
+                You can pass data, known as parameters, into a function.<br>
+                A function can return data as a result.</p><br>
+            <h2>Creating a function</h2>
+            <p>In Pyhton to declare a function you must begin with <code>def</code> keyword.</p>
+            <pre class="code">def myFunc():
+    print("this is a function")
+    myFunc() <span class="comment">#this line calls the function</span></pre>
+            <p>After calling the function the code inside the body of the function will be executed.</p><br><br>
+            <h2>Arguments</h2>
+            <p>Information can be passed into functions as arguments.<br>
+                Arguments are specified after the function name, inside the parentheses. You can add as many arguments as you want, just separate them with a comma.<br>
+                The following example has a function with one argument (fname). When the function is called, we pass along a first name, which is used inside the function to print the full name:<br>
+            </p>
+            <pre class="code">def myFunc(fname, flast): <span class="comment">#you can add multiple parameters to a function</span>
+    print("Hello " + fname)
+myFunc("david") <span class="comment">#if you provide less or more arguments than a function requires it will generate an error</span></pre>
+            <p>Prints out <code>Hello david</code></p>
+            <br><br>
+            <h2>Arbitrary Arguments, *args</h2>
+            <p><br>If you do not know how many arguments that will be passed into your function, add a <code>*</code> before the parameter name in the function definition.<br>This way the function will receive a tuple of arguments, and can access the items accordingly:</p>
+            <pre class="code">def myFunc(*kids):
+    print("The youngest child is " + kids[1])
+myFunc("Emil", "Tobias", "dato")</pre>
+            <p>Prints out <code>The youngest child is Tobias</code></p>
+        </section>
+        <section class="main-section" id="Variable_Scope">
+            <header class="section-header">Variable Scope</header>
+            <p class="section-content">Variables have <b>scope</b>, meaning it is only available in the region they are created.</p><br>
+            <h2>Local Scope</h2>
+            <p>A variable created inside a function belongs to the <i>local scope</i> of that fucntion, and can only be used inside that function.</p>
+            <pre class="code">def myFunc():
+    x = 300
+    print(x)
+myFunc()</pre>
+            <p>The variable <code>x</code> will be only available in the <code>myFunc</code>'s body.</p>
+            <br>
+            <p>Variables created in the main body of Python are called Global variables and are available everywhere.</p>
+            <br><p>Global variable can also be defined inside a function with <code>global</code> keyword.</p>
+            <pre class="code">def myFunc():
+    global x
+    x = 300
+myFunc()
+print(x)</pre>
+            <p>Now the variable <code>x</code> is available everywhere.</p>
+            <p>The <code>global</code> keyword is also used when we want to make changes to a global variable inside a funciton body.</p>
+        </section>
+        <section class="main-section" id="Reference">
+            <header class="section-header">Reference</header>
+            <p class="section-content">To see more detailed version of Python reference, check out <a href="https://www.w3schools.com/python/python_reference.asp">This Link</a>.</p>
+        </section>
+    </main>
+</body>
+</html>
